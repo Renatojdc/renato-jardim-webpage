@@ -16,11 +16,11 @@
         <!-- Header-->
         <div class="masthead d-flex align-items-center" style="background-color: gold;
         background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);">
+        background: linear-gradient(90deg, rgba(187,29,29,1) 0%, rgba(245,176,65,1) 49%, rgba(51,0,255,1) 100%);">
             <div class="container px-4 px-lg-5 text-center">
                 <h1 class="mb-1" style="text-shadow: 2px 2px whitesmoke">Renato Jardim</h1>
                 <h3 class="mb-5 color-white" style="text-shadow: 1px 1px black"><em>Fullstack web developer</em></h3>
-                <a class="btn btn-primary btn-xl" href="#about">About me</a>
+                <a class="btn btn-dark btn-xl" href="#about">About me</a>
             </div>
         </div>
         <!-- About-->
@@ -45,7 +45,7 @@
             </div>
         </section>
         <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
+        <section class="content-section text-white text-center" id="services"  style="background: #D58936;">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
                     <h3 class="text-secondary mb-0">Abilities</h3>
@@ -103,7 +103,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
                     <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
+                    <h2 class="mb-5">My Projects</h2>
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
@@ -114,7 +114,7 @@
                                     <p class="mb-0">A social media. Where you can create trips and find buddies to practice a sport with!</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="https://res.cloudinary.com/dnheq83kz/image/upload/v1663715439/RJ%20Dev/Get_Together_landing_page_njucmy.jpg" alt="..." />
+                            <img class="img-fluid" src="https://res.cloudinary.com/dnheq83kz/image/upload/v1663743811/RJ%20Dev/Get_Together_landing_page_3_xkz4kj.jpg" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
@@ -125,7 +125,7 @@
                                     <p class="mb-0">A Airbnb clone, where you can rent and offer for rent all kind of sports gears!</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="https://res.cloudinary.com/dnheq83kz/image/upload/v1663715439/RJ%20Dev/Gear_Up_lading_page_tgdn81.jpg" alt="..." />
+                            <img class="img-fluid" src="https://res.cloudinary.com/dnheq83kz/image/upload/v1663743812/RJ%20Dev/Gear_Up_lading_page_2_fhbiz0.jpg" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
@@ -145,38 +145,43 @@
             </div>
         </section>
         <!-- Call to Action-->
-        <section class="content-section bg-primary text-white">
+        <%# <section class="content-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">The buttons below are impossible to resist...</h2>
                 <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
                 <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
             </div>
-        </section>
+        </section> %>
         <!-- Map-->
-        <div class="map" id="contact">
+        <div style="width: 100%; height: 600px;"
+            data-controller="map"
+            data-map-markers-value="<%= @markers.to_json %>"
+            data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+        </div>
+        <%# <div class="map" id="contact">
             <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
             <br />
             <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
-        </div>
+        </div> %>
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/renato-jardim-di-carlantonio-798542239/"><i class="icon-social-linkedin"></i></a>
+                    <li class="list-inline-item" >
+                        <a class="social-link rounded-circle text-white mr-3" style="background: #D58936;" href="https://www.linkedin.com/in/renato-jardim-di-carlantonio-798542239/"><i class="icon-social-linkedin"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="https://github.com/Renatojdc"><i class="icon-social-github"></i></a>
+                        <a class="social-link rounded-circle text-white" style="background: #D58936;" href="https://github.com/Renatojdc"><i class="icon-social-github"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/rtoficial_/"><i class="icon-social-instagram"></i></a>
+                        <a class="social-link rounded-circle text-white mr-3" style="background: #D58936;" href="https://www.instagram.com/rtoficial_/"><i class="icon-social-instagram"></i></a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-0">Renato Jardim's webpage 2022</p>
+                <p class="text-muted small mb-0">Renato Jardim Web Developer 2022</p>
             </div>
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
         </footer>
         <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

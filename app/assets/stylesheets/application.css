@@ -19,3 +19,4 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
 @import "flatpickr/dist/themes/material_orange";
+@import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder";
