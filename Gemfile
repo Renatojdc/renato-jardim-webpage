@@ -30,6 +30,9 @@ gem "jbuilder"
 # Rails Internalization gem
 gem 'rails-i18n', '~> 7.0.0'
 
+# Geocoder gem for map location
+gem "geocoder"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
