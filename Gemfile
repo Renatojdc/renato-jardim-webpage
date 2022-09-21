@@ -33,6 +33,9 @@ gem 'rails-i18n', '~> 7.0.0'
 # Geocoder gem for map location
 gem "geocoder"
 
+# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'webpacker', '~> 5.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
