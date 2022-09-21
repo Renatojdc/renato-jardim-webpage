@@ -6,7 +6,8 @@ class RenatosController < ApplicationController
     @markers = @renatos.geocoded.map do |rt|
       {
         lat: rt.latitude,
-        lng: rt.longitude
+        lng: rt.longitude,
+        image_url: helpers.asset_url("app/assets/images/logo.png")
       }
     end
   end
