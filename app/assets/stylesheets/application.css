@@ -16,5 +16,6 @@
 @import 'stylesheets/css';
 @import 'stylesheets/js';
 @import 'stylesheets/vendor';
+@import "bootstrap/scss/bootstrap";
 @import "font-awesome";
 @import "flatpickr/dist/themes/material_orange";
