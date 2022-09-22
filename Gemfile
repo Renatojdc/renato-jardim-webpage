@@ -31,7 +31,7 @@ gem "jbuilder"
 gem 'rails-i18n', '~> 7.0.0'
 
 # Geocoder gem for map location
-gem "geocoder"
+# gem "geocoder"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
